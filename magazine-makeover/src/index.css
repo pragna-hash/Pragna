@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 220 13% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 13% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --info: 211 100% 50%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 13% 18%;
+
+    --radius: 0.5rem;
+
+    /* Magazine-specific tokens */
+    --nav-bg: 220 14% 96%;
+    --nav-border: 220 13% 91%;
+    --category-culturals: 211 100% 50%;
+    --category-ethnic: 142 71% 45%;
+    --category-science: 0 84% 60%;
+    --category-tech: 262 83% 58%;
+    --gradient-subscribe: linear-gradient(135deg, hsl(220 13% 18%) 0%, hsl(220 20% 30%) 100%);
+    --gradient-login: linear-gradient(135deg, hsl(211 100% 50%) 0%, hsl(262 83% 58%) 100%);
+    
+    /* Typography */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(220 13% 18% / 0.05), 0 2px 4px -2px hsl(220 13% 18% / 0.05);
+    --shadow-card-hover: 0 20px 25px -5px hsl(220 13% 18% / 0.1), 0 8px 10px -6px hsl(220 13% 18% / 0.1);
+    --shadow-button: 0 4px 14px 0 hsl(220 13% 18% / 0.25);
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 20% 14%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 20% 14%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 220 20% 18%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 0 0% 83%;
+
+    --nav-bg: 220 20% 12%;
+    --nav-border: 220 20% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-magazine {
+    @apply max-w-6xl mx-auto px-4 sm:px-6;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
