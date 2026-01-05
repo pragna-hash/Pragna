@@ -35,7 +35,7 @@ const EDITORIAL_TEAM = [
   {
     name: "Madhurima",
     role: "Team Lead",
-    image: "https://i.ibb.co/vxTv3q9k/madhurima.png",
+    image: "https://i.ibb.co/JwTFjFmV/madhurima.jpg",
     email: "madhurima0720@gmail.com",
     phone: "+91 88971 38281",
     resume: "#"
@@ -43,7 +43,7 @@ const EDITORIAL_TEAM = [
   {
     name: "Puja Yadav",
     role: "Database",
-    image: "https://i.ibb.co/NnsTQB8x/puja.png",
+    image: "https://i.ibb.co/tMXZMtWf/puja.jpg",
     email: "pujageetha7@gmail.com",
     phone: "+91 81859 98426",
     resume: "#"
